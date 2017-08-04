@@ -9,7 +9,7 @@ class CustomHandler < AlexaSkillsRuby::Handler
     #response.set_output_speech_ssml("<speak><p>Horoscope Text</p><p>More Horoscope text</p></speak>")
     response.set_reprompt_speech_text("Did you want to say hello to Jason Issacs?")
     #response.set_reprompt_speech_ssml("<speak>Reprompt Horoscope Text</speak>")
-    response.set_simple_card("title", "content")
+    response.set_simple_card("Hello!", "Hello to Jason Issacs.")
     logger.info 'HelloToJason processed'
   end
 
