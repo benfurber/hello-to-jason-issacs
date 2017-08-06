@@ -13,6 +13,16 @@ class CustomHandler < AlexaSkillsRuby::Handler
     logger.info 'HelloToJason processed'
   end
 
+  on_intent("") do
+    slots = request.intent.slots
+    response.set_output_speech_text("How do you get Wittertainment on Alexa? You just get Wittertainment on Alexa.")
+    #response.set_reprompt_speech_ssml("<speak>Reprompt Horoscope Text</speak>")
+    response.set_simple_card("How do you get Wittertainment on Alexa?", "You just get Wittertainment on Alexa.")
+    logger.info 'Launch processed'
+  end
+
+
+
 end
 
 post '/' do
