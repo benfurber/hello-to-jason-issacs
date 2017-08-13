@@ -4,8 +4,8 @@ require 'alexa_skills_ruby'
 class CustomHandler < AlexaSkillsRuby::Handler
 
   on_launch do
-    response.set_output_speech_text("How do you get Wittertainment on Alexa? You just get Wittertainment on Alexa.")
-    response.set_simple_card("How do you get Wittertainment on Alexa?", "You just get Wittertainment on Alexa.")
+    response.set_output_speech_text("Welcome. I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
+    response.set_simple_card("Welcome", "I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
     logger.info 'Launch processed'
   end
 
