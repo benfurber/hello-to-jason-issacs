@@ -4,8 +4,9 @@ require 'alexa_skills_ruby'
 class CustomHandler < AlexaSkillsRuby::Handler
 
   on_launch do
-    set_output_speech_text("Welcome. I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
-    set_simple_card("Welcome", "I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
+    response.set_output_speech_text("Welcome. I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
+    response.set_simple_card("Welcome", "I hope you enjoyed the cruise. You can ask me to say Hello to Jason Issacs.")
+    session_attributes.should_end_session(false)
     logger.info 'Launch processed'
   end
 
